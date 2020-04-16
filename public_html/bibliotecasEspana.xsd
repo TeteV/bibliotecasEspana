@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.tito.com"
+           xmlns="https://www.tito.com"
+           elementFormDefault="qualified">
+    
+    <xs:element name="list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="item">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CODIGO" type="xs:string"/>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="INSTITUCION" minOccurs="0" type="xs:string"/>
+                            <xs:element name="DIRECCION" type="xs:string"/>
+                            <xs:element name="CODIGO_POSTAL" type="xs:string"/>
+                            <xs:element name="LOCALIDAD" type="xs:string"/>
+                            <xs:element name="PROVINCIA"  minOccurs="0" type="xs:string"/>
+                            <xs:element name="COMUNIDAD_AUTONOMA" minOccurs="0" type="xs:string"/>
+                            <xs:element name="PAIS"  type="xs:string"/>
+                            <xs:element name="AÑO_FUNDACION" minOccurs="0">
+                                <xs:simpleType>
+                                <xs:restriction base="xs:integer"/>
+                                    <!-- HAY PROBLEMA AQUI CON LOS QUE NO TIENE AÑO -->
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="HORARIO" minOccurs="0" type="xs:string"/>
+                            <xs:element name="TIPO_ACCESO" minOccurs="0" type="xs:string"/>
+                            <xs:element name="NOTAS_ACCESO" minOccurs="0" type="xs:string"/>
+                            <xs:element name="TIPO_BIBLIOTECA" type="xs:string"/>
+                            <xs:element name="TIPO_DEPENDENCIA" minOccurs="0" type="xs:string"/>
+                            <xs:element name="PRESTAMO_INTERBIBLIOTECARIO" minOccurs="0" type="xs:string"/>
+                            <xs:element name="OBSERVACIONES"  minOccurs="0" type="xs:string"/>
+                            <xs:element name="CATALOGOS_IMPRESOS"  minOccurs="0" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
