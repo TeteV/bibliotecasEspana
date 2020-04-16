@@ -26,3 +26,7 @@ XSL in public_html > bibliotecasEspana.xsl
 
 * **Nestor Cabanillas** - *Initial work* - [Tete](https://github.com/TeteV)
 
+
+# Warning
+
+### The files are too big to netbeans , please consider to open with other IDE
