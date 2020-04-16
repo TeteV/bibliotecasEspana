@@ -1,6 +1,6 @@
 # Las Palmas de Gran Canaria Beachs
 
-There's a little XLM to know the weather of the differents beachs of Las Palmas
+There's a BIG XLM to know the Libraries around the world
 
 ## Getting Started
 
