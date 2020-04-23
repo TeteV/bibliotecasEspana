@@ -31,6 +31,8 @@
 							</label>
 							<input class="form-control" type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category" />
 						</div>
+                                                <button type="button" href="bibliotecasEspana.html" class="btn btn-primary col-sm-4">Ordenar por Institucion</button>
+
 					</div>
 				</div>
 				<br />
