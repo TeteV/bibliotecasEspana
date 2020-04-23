@@ -15,10 +15,10 @@ xmlns:xd="https://www.tito.com">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"/>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"/>
+                <script src="index.js"></script>
             </head>
             <body>
-                
-                <div class="container">
+                    <div class="container">
         <div class="row">
           
           <div class="col-sm-4">
@@ -28,22 +28,26 @@ xmlns:xd="https://www.tito.com">
           </div>
         </div>
       </div>
-      <br>
+      <br/>
                  <div class="container">                   
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Institucion</th>
-                                <th>Direccion</th>
-                                <th>Localidad</th>   
                                 <th>Pais</th>
+                                <th>Nombre</th>
+                                <th>Direccion</th>
+                                <th>Localidad</th>
+                                <th>Institucion</th>
                             </tr>
                         </thead>
-                        <tbody id="my-tbody"> 
+                        <tbody id="my-tbody">
                             <xsl:for-each select="x:list/x:item">
                                 <tr>     
                                     <td>
-                                        <xsl:value-of select="x:INSTITUCION"/>
+                                        <xsl:value-of select="x:PAIS"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="x:NOMBRE"/>
                                     </td>
                                     <td>
                                         <xsl:value-of select="x:DIRECCION"/>
@@ -52,7 +56,7 @@ xmlns:xd="https://www.tito.com">
                                         <xsl:value-of select="x:LOCALIDAD"/>
                                     </td>
                                     <td>
-                                      <xsl:value-of select="x:PAIS"/>
+                                        <xsl:value-of select="x:INSTITUCION"/>
                                     </td>
                                 </tr>
                             </xsl:for-each>
