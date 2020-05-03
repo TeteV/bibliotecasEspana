@@ -11,12 +11,15 @@
             <INSTITUCION>
                 <xsl:value-of select="x:INSTITUCION"/>
             </INSTITUCION>
+            
             <DIRECCION>
                 <xsl:value-of select="x:DIRECCION"/>
             </DIRECCION>
+            
             <LOCALIDAD>
                 <xsl:value-of select="x:LOCALIDAD"/>
             </LOCALIDAD>
+            
             <PAIS>
                 <xsl:value-of select="x:PAIS"/>
             </PAIS>
