@@ -51,25 +51,25 @@
 							</tr>
 						</thead>
 						<tbody id="my-tbody">
-							<for-each select="x:list/x:item">
+							<xsl:for-each select="x:list/x:item">
 								<tr>
 									<td>
-										<value-of select="x:PAIS" />
+										<xsl:value-of select="x:PAIS" />
 									</td>
 									<td>
-										<value-of select="x:NOMBRE" />
+										<xsl:value-of select="x:NOMBRE" />
 									</td>
 									<td>
-										<value-of select="x:DIRECCION" />
+										<xsl:value-of select="x:DIRECCION" />
 									</td>
 									<td>
-										<value-of select="x:LOCALIDAD" />
+										<xsl:value-of select="x:LOCALIDAD" />
 									</td>
 									<td>
-										<value-of select="x:INSTITUCION" />
+										<xsl:value-of select="x:INSTITUCION" />
 									</td>
 								</tr>
-							</for-each>
+							</xsl:for-each>
 						</tbody>
 					</table>
 				</div>

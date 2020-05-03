@@ -2,7 +2,7 @@
 <stylesheet xmlns:x="https://www.tito.com" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" 
 	xmlns:xd="https://www.tito.com">
-	<output method="html" />
+	<output method="html"/>
 	<template match="/">
 		<html>
 			<head>
@@ -50,23 +50,22 @@
 							</tr>
 						</thead>
 						<tbody id="my-tbody">
-							<for-each select="x:list/x:item">
+							<xsl:for-each select="x:list/x:item">
 								<tr>
-								
 									<td>
-										<value-of select="x:NOMBRE" />
+										<xsl:value-of select="x:NOMBRE" />
 									</td>
 									<td>
-										<value-of select="x:DIRECCION" />
+										<xsl:value-of select="x:DIRECCION" />
 									</td>
 									<td>
-										<value-of select="x:INSTITUCION" />
+										<xsl:value-of select="x:INSTITUCION" />
 									</td>
 									<td>
-										<value-of select="x:PROVINCIA[text()='Las Palmas']" />
+										<xsl:value-of select="x:PROVINCIA[text()='Las Palmas']" />
 									</td>
 								</tr>
-							</for-each>
+							</xsl:for-each>
 						</tbody>
 					</table>
 				</div>

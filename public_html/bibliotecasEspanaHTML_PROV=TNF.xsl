@@ -25,9 +25,9 @@
 							</label>
 							<input class="form-control" type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category" />
 						</div>
-						<button type="button" href="bibliotecasEspana.html" class="btn btn-primary col-sm-4">
+						<!--<button type="button" href="bibliotecasEspana.html" class="btn btn-primary col-sm-4">
 							Ordenar por Institucion
-						</button>
+						</button>-->
 					</div>
 				</div>
 				<br />
@@ -50,23 +50,22 @@
 							</tr>
 						</thead>
 						<tbody id="my-tbody">
-							<for-each select="x:list/x:item">
+							<xsl:for-each select="x:list/x:item">
 								<tr>
-								
 									<td>
-										<value-of select="x:NOMBRE" />
+										<xsl:value-of select="x:NOMBRE" />
 									</td>
 									<td>
-										<value-of select="x:DIRECCION" />
+										<xsl:value-of select="x:DIRECCION" />
 									</td>
 									<td>
-										<value-of select="x:INSTITUCION" />
+										<xsl:value-of select="x:INSTITUCION" />
 									</td>
 									<td>
-										<value-of select="x:PROVINCIA[text()='Santa Cruz de Tenerife']" />
+										<xsl:value-of select="x:PROVINCIA[text()='Santa Cruz de Tenerife']" />
 									</td>
 								</tr>
-							</for-each>
+							</xsl:for-each>
 						</tbody>
 					</table>
 				</div>

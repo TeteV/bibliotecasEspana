@@ -50,23 +50,23 @@
 							</tr>
 						</thead>
 						<tbody id="my-tbody">
-							<for-each select="x:list/x:item">
+							<xsl:for-each select="x:list/x:item">
 								<tr>
 								
 									<td>
-										<value-of select="x:NOMBRE" />
+										<xsl:value-of select="x:NOMBRE" />
 									</td>
 									<td>
-										<value-of select="x:DIRECCION" />
+										<xsl:value-of select="x:DIRECCION" />
 									</td>
 									<td>
-										<value-of select="x:INSTITUCION" />
+										<xsl:value-of select="x:INSTITUCION" />
 									</td>
 									<td>
-										<value-of select="x:LOCALIDAD[text()='Palmas de Gran Canaria (Las)']'" />
+										<xsl:value-of select="x:LOCALIDAD[text()='Palmas de Gran Canaria (Las)']" />
 									</td>
 								</tr>
-							</for-each>
+                                                        </xsl:for-each>
 						</tbody>
 					</table>
 				</div>
